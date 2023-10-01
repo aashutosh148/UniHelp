@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Attendance Tracker</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="subjectContainer">
+			<h2>Enter The Details</h2>
+			<label for="subjectName">Subject Name:</label>
+			<input type="text" id="subjectName" /><br />
+			<label for="classesAttended">Classes Attended:</label>
+			<input type="number" id="classesAttended" /><br />
+			<label for="totalClasses">Total Classes:</label>
+			<input type="number" id="totalClasses" /><br />
+			<label for="monday">Monday:</label>
+			<input type="number" id="monday" /><br />
+			<label for="tuesday">Tuesday:</label>
+			<input type="number" id="tuesday" /><br />
+			<label for="wednesday">Wednesday:</label>
+			<input type="number" id="wednesday" /><br />
+			<label for="thursday">Thursday:</label>
+			<input type="number" id="thursday" /><br />
+			<label for="friday">Friday:</label>
+			<input type="number" id="friday" /><br />
+		</div>
+		<div id="leaveDates">
+			<h2>Leave Dates</h2>
+			<label for="fromDate">From:</label>
+			<input type="date" id="fromDate" />
+			<label for="toDate">To:</label>
+			<input type="date" id="toDate" />
+		</div>
+		<div id="totalAttendance"></div>
+		<button onclick="calculateAttendance()">
+			Calculate Overall Attendance
+		</button>
+		<script src="script.js"></script>
+	</body>
+</html>
+
