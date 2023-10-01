@@ -1,69 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  #subjectsContainer {
-    max-width: 600px;
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .subject {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .subject label {
-    margin-right: 10px;
-  }
-  
-  .subject input {
-    width: 50px;
-    margin-right: 5px;
-  }
-  
-  #totalAttendance {
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-  
-  h3 {
-    margin-bottom: 5px;
-  }
-  
-  /* Adjustments for mobile devices */
-  @media (max-width: 600px) {
-    .subject input {
-      width: 100%; /* Make the input fields take full width */
-      margin: 5px 0;
-    }
-  }
-  
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#subjectContainer {
+	max-width: 600px;
+	margin-bottom: 20px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subject {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.subject label {
+	margin-right: 10px;
+}
+
+.subject input {
+	width: 50px;
+	margin-right: 5px;
+}
+
+input {
+	border-radius: 3px;
+	border-top: white;
+	border-right: white;
+	border-left: white;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 5px;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 600px) {
+	.subject input {
+		width: 100%; /* Make the input fields take full width */
+		margin: 5px 0;
+	}
+}
