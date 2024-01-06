@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Vacation Planner</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Vacation Planner</h1>
+
+			<label for="newHolidayDate">Add National Holiday:</label>
+			<input type="date" id="newHolidayDate" />
+			<button onclick="addCustomHoliday()">Add Holiday</button>
+
+			<label for="startDate">Start Date:</label>
+			<input type="date" id="startDate" />
+
+			<label for="endDate">End Date:</label>
+			<input type="date" id="endDate" />
+
+			<label for="maxOffDays">Maximum Off Days:</label>
+			<input type="number" id="maxOffDays" />
+
+			<button onclick="planVacation()">Plan Vacation</button>
+
+			<div id="result">
+				<h2>Optimal Vacation:</h2>
+				<p id="vacationDetails"></p>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
