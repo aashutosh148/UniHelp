@@ -12,7 +12,8 @@ function planVacation() {
     if (result.startIndex !== -1 && result.endIndex !== -1) {
         const startVacationDate = startDate.addDays(result.startIndex);
         const endVacationDate = startDate.addDays(result.endIndex);
-        vacationDetails.innerHTML = `You can have a vacation from ${startVacationDate} to ${endVacationDate}.`;
+        const size = result.endIndex - result.startIndex + 1;
+        vacationDetails.innerHTML = `You can have a vacation from ${startVacationDate} to ${endVacationDate}, which is ${size} days long.`;
     } else {
         vacationDetails.innerHTML = `Sorry, couldn't find a valid vacation within the constraints.`;
     }

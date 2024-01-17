@@ -22,10 +22,12 @@ input {
 	margin-top: 5px;
 	margin-bottom: 15px;
 	background-color: rgb(249, 233, 203);
+	border: 1px solid #ccc;
+	border-radius: 5px; 
 }
 
 button {
-	background-color: rgb(193, 152, 123);
+	background-color: rgb(170, 109, 66);
 	color: white;
 	padding: 10px;
 	border: none;
@@ -34,10 +36,14 @@ button {
 }
 
 button:hover {
-	background-color: #cdac80;
+	background-color: #db9131;
 	transform: scale(1.05);
 }
-
+h1, h2 {
+    text-align: center;
+	color: #4f4e4e;
+}
 #result {
 	margin-top: 20px;
+	
 }
